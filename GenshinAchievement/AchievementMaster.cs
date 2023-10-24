@@ -233,6 +233,7 @@ namespace GenshinAchievement
         public void Init()
         {
             Items.Clear();
+            WordsLog.Clear();
             var text = LoadCSV("list.csv", true);//連続データ
             //text += LoadCSV("list2.csv", false);//追加非連続
 
