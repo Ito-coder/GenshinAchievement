@@ -32,6 +32,8 @@ namespace GenshinAchievement
             TesseractOCREngine.DefaultPageSegMode = PageSegMode.SingleLine;
             //TesseractOCREngine.SetVariable("user_words_suffix", "user-words");
             //TesseractOCREngine.SetVariable("user_words", @"./tessdata");
+
+            Directory.CreateDirectory("./img/");
         }
         public List<OCRResult> OCRMulti(Mat mat)
         {
