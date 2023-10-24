@@ -171,7 +171,7 @@ namespace GenshinAchievement
         {
             AchievementMaster.SaveJson();
             StringBuilder s = new();
-            foreach(var item in AchievementMaster.Items)
+            foreach (var item in AchievementMaster.Items)
             {
                 s.AppendLine(
                     (item.Threshold() ? "1" : "0") + ","
